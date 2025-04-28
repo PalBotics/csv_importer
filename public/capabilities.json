@@ -1,0 +1,32 @@
+{
+    "name": "CSV Importer",
+    "description": "A Trello Power-Up to import cards and lists from a CSV file.",
+    "icon": "https://trello-csv-powerup.vercel.app/CSV-importer-icon.png",
+    "app": {
+      "url": "/client.js"
+    },
+    "connect": {
+      "url": "/index.html"
+    },
+    "permissions": {
+      "board": "read",
+      "write": true
+    },
+    "capabilities": [
+      "board-buttons",
+      "show-settings",
+      "authorization"
+    ],
+    "board-buttons": [
+      {
+        "text": "Test CSV Button",
+        "callback": "showImportPopup"
+      }
+    ],
+    "authorization": {
+      "type": "none"
+    },
+    "author": "PalBotics",
+    "version": "1.0"
+  }
+  
